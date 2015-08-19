@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  Paperclip.options[:image_magick_path] = "C:\Windows\System32"
+  Paperclip.options[:command_path] = "C:\Windows\System32"
 end
